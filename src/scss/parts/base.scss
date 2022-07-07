@@ -5,4 +5,29 @@ body {
   font-size: 10px;
   color: $color-black;
   background-color: $color-white;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+._container {
+  max-width: $main-container-size;
+  padding: 0px 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+._sub-container {
+  max-width: $sub-container-size;
+  padding: 0px 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 100%;
 }

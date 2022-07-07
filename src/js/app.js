@@ -5,13 +5,19 @@
 
 // burger
 
-// let header_menu = document.querySelector('.menu__body');
-// let burger_icon = document.querySelector('.icon-menu');
-// burger_icon.addEventListener('click', function (e) {
-//   header_menu.classList.toggle('_active');
-//   burger_icon.classList.toggle('_active');
-//   document.body.classList.toggle('_lock');
-// });
+let header_menu = document.querySelector('.header__nav');
+let burger_icon = document.querySelector('.header__burger');
+burger_icon.addEventListener('click', function (e) {
+  header_menu.classList.toggle('_active');
+  burger_icon.classList.toggle('_active');
+  document.body.classList.toggle('_lock');
+});
+
+let spin_decor = document.querySelector('.full-screen__decor');
+let spin_image = document.querySelector('.full-screen__images');
+spin_decor.addEventListener('mouseover', function (e) {
+  spin_image.classList.toggle('_active');
+});
 
 // =========================================================
 
