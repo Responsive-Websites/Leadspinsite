@@ -23,16 +23,16 @@ spin_decor.addEventListener('mouseover', function (e) {
 
 // ibg
 
-// function ibg() {
-//     let ibg = document.querySelectorAll('._ibg');
-//     for (var i = 0; i < ibg.length; i++) {
-//       if (ibg[i].querySelector('img')) {
-//         ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
-//       }
-//     }
-//   }
+function ibg() {
+  let ibg = document.querySelectorAll('._ibg');
+  for (var i = 0; i < ibg.length; i++) {
+    if (ibg[i].querySelector('img')) {
+      ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
+    }
+  }
+}
 
-//   ibg();
+ibg();
 
 // =========================================================
 
@@ -425,3 +425,18 @@ let _slideToggle = (target, duration = 500) => {
 // Медиа: data-spollers="992,max (or min)"
 
 // если нужно показывать только один слайдер в блоке - добавляем атрибут data-one-spoller
+
+const swiper = new Swiper('.team__slider', {
+  grabCursor: true,
+  speed: 1500,
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: true,
+  },
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+  },
+});
