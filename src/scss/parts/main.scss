@@ -17,6 +17,19 @@
       padding: 60px 0px 40px 0px;
     }
   }
+  &__benefits {
+    margin-top: 86px;
+
+    @media screen and (max-width: $md-4) {
+      margin-top: 74px;
+    }
+    @media screen and (max-width: $md-3) {
+      margin-top: 60px;
+    }
+    @media screen and (max-width: $md-2) {
+      margin-top: 40px;
+    }
+  }
 }
 .full-screen {
   color: $color-white;
@@ -159,6 +172,209 @@
     color: rgba(255, 255, 255, 0.4);
     @media screen and (max-width: $md-3) {
       margin-top: 20px;
+    }
+  }
+}
+
+//benefits
+
+.benefits {
+  &__container {
+  }
+
+  &__inner {
+  }
+
+  &__sub-title {
+    font-size: 10px;
+    line-height: 342%;
+    color: $color-red;
+    text-transform: uppercase;
+    letter-spacing: 0.44px;
+  }
+
+  &__spoilers {
+    margin-top: 64px;
+    @media screen and (max-width: $md-4) {
+      margin-top: 56px;
+    }
+    @media screen and (max-width: $md-3) {
+      margin-top: 46px;
+    }
+    @media screen and (max-width: $md-2) {
+      margin-top: 26px;
+    }
+  }
+
+  &__spoiler {
+  }
+}
+.spoiler-benefits {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 26px;
+
+      @media screen and (max-width: $md-2) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 24px 0px 32px 0px;
+    transition: all 0.3s ease 0s;
+    &._active {
+      padding: 24px 0px 24px 0px;
+      .spoiler-benefits__icon {
+        &::after {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+      }
+    }
+
+    &:hover {
+      @media screen and (min-width: $md-2) {
+        .spoiler-benefits__icon {
+          border-color: $color-red;
+          &::before,
+          &::after {
+            background-color: $color-red;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: $md-4) {
+      padding: 18px 0px 18px 0px;
+      &._active {
+        padding: 18px 0px 16px 0px;
+      }
+    }
+    @media screen and (max-width: $md-3) {
+      padding: 14px 0px 14px 0px;
+      &._active {
+        padding: 14px 0px 18px 0px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 46px;
+    line-height: 120%;
+    padding-right: 20px;
+    flex: 0 1 622px;
+
+    @media screen and (max-width: $md-4) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: $md-3) {
+      font-size: 26px;
+      padding-right: 10px;
+    }
+    @media screen and (max-width: $md-2) {
+      font-size: 20px;
+    }
+  }
+
+  &__sub-title {
+    font-size: 16px;
+    line-height: 133%;
+    padding-right: 20px;
+    flex: 1 1 600px;
+    @media screen and (max-width: $md-4) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: $md-3) {
+      font-size: 12px;
+      padding-right: 10px;
+    }
+    @media screen and (max-width: $md-2) {
+      padding-right: 0px;
+      margin-top: 12px;
+    }
+  }
+
+  &__icon {
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      top: 50%;
+      left: 50%;
+      background-color: $color-black;
+      transform: translate(-50%, -50%);
+
+      transition: transform 0.3s ease 0s;
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    @media screen and (max-width: $md-4) {
+      flex: 0 0 32px;
+      width: 32px;
+      height: 32px;
+
+      &::before,
+      &::after {
+        width: 14px;
+        height: 1px;
+      }
+    }
+  }
+
+  &__content {
+    padding-left: 40px;
+    @media screen and (max-width: $md-4) {
+      padding-left: 30px;
+    }
+    @media screen and (max-width: $md-3) {
+      padding-left: 20px;
+    }
+    @media screen and (max-width: $md-2) {
+      padding-left: 12px;
+    }
+  }
+
+  &__content-heading {
+    font-size: 30px;
+    line-height: 110%;
+    color: $color-red;
+    @media screen and (max-width: $md-4) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: $md-3) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: $md-2) {
+      font-size: 16px;
+    }
+  }
+
+  &__content-text {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 100%;
+
+    @media screen and (max-width: $md-4) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: $md-3) {
+      font-size: 14px;
+      margin-top: 10px;
     }
   }
 }
