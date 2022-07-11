@@ -401,6 +401,10 @@
 
     justify-content: space-between;
     margin: 0px -15px 0px -15px;
+
+    @media screen and (max-width: $md-3) {
+      display: block;
+    }
   }
 
   &__content {
@@ -418,6 +422,13 @@
     }
     @media screen and (max-width: $md-4) {
       font-size: 60px;
+    }
+    @media screen and (max-width: $md-3) {
+      text-align: center;
+      font-size: 50px;
+    }
+    @media screen and (max-width: $md-2) {
+      font-size: 36px;
     }
   }
 
@@ -439,12 +450,24 @@
       min-height: auto;
       font-size: 14px;
     }
+    @media screen and (max-width: $md-3) {
+      max-width: none;
+      text-align: center;
+      margin-top: 30px;
+    }
+    @media screen and (max-width: $md-2) {
+      margin-top: 20px;
+    }
   }
 
   &__workers {
     display: flex;
     flex-flow: row wrap;
     margin: 30px -15px 0px -15px;
+
+    @media screen and (max-width: $md-3) {
+      display: none;
+    }
   }
   &__workers-first {
     flex: 0 1 100%;
@@ -494,6 +517,15 @@
     @media screen and (max-width: $md-4) {
       margin-top: 60px;
     }
+    @media screen and (max-width: $md-3) {
+      margin-top: 30px;
+      text-align: center;
+    }
+    @media screen and (max-width: $md-2) {
+      & p {
+        font-size: 16px;
+      }
+    }
   }
 
   //slider styles
@@ -501,6 +533,9 @@
   &__slider {
     @media screen and (min-width: $md-3) {
       display: none;
+    }
+    @media screen and (max-width: $md-3) {
+      margin-top: 20px;
     }
   }
   &__slider-inner {
@@ -532,5 +567,13 @@
     margin-top: 14px;
     font-size: 11px;
     line-height: 148%;
+
+    @media screen and (max-width: $md-3) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: $md-2) {
+      font-size: 12px;
+      margin-top: 10px;
+    }
   }
 }

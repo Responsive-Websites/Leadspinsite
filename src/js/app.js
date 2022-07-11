@@ -427,16 +427,17 @@ let _slideToggle = (target, duration = 500) => {
 // если нужно показывать только один слайдер в блоке - добавляем атрибут data-one-spoller
 
 const swiper = new Swiper('.team__slider', {
-  grabCursor: true,
   speed: 1500,
+  spaceBetween: 10,
+
   autoplay: {
     delay: 8000,
     disableOnInteraction: true,
   },
   breakpoints: {
-    600: {
+    540: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      grabCursor: true,
     },
   },
 });

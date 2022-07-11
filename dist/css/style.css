@@ -734,6 +734,11 @@ main {
   justify-content: space-between;
   margin: 0px -15px 0px -15px;
 }
+@media screen and (max-width: 768px) {
+  .team__inner {
+    display: block;
+  }
+}
 .team__content {
   flex: 0 1 50%;
   margin: 0px 15px;
@@ -752,6 +757,17 @@ main {
 @media screen and (max-width: 1024px) {
   .team__title {
     font-size: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__title {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__title {
+    font-size: 36px;
   }
 }
 .team__text {
@@ -776,10 +792,27 @@ main {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 768px) {
+  .team__text {
+    max-width: none;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__text {
+    margin-top: 20px;
+  }
+}
 .team__workers {
   display: flex;
   flex-flow: row wrap;
   margin: 30px -15px 0px -15px;
+}
+@media screen and (max-width: 768px) {
+  .team__workers {
+    display: none;
+  }
 }
 .team__workers-first {
   flex: 0 1 100%;
@@ -830,9 +863,25 @@ main {
     margin-top: 60px;
   }
 }
+@media screen and (max-width: 768px) {
+  .team__quote {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__quote p {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team__slider {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__slider {
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 1296px) {
@@ -866,4 +915,15 @@ main {
   margin-top: 14px;
   font-size: 11px;
   line-height: 148%;
+}
+@media screen and (max-width: 768px) {
+  .worker-card__about {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .worker-card__about {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 }
