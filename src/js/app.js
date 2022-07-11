@@ -36,6 +36,30 @@ ibg();
 
 // =========================================================
 
+//tabs
+
+const tabs = document.getElementsByClassName('about__tab');
+
+const sections = document.getElementsByClassName('about__tab-content');
+const decors = document.getElementsByClassName('about__decor');
+
+[...tabs].forEach((tab) => tab.addEventListener('click', tabClick));
+
+function tabClick(event) {
+  const tabId = event.target.dataset.id;
+
+  [...tabs].forEach((tab, i) => {
+    tab.classList.remove('_active');
+    sections[i].classList.remove('_active');
+    decors[i].classList.remove('_active');
+  });
+
+  tabs[tabId - 1].classList.add('_active');
+  sections[tabId - 1].classList.add('_active');
+  decors[tabId - 1].classList.add('_active');
+}
+// =========================================================
+
 // smooth scroll
 // data-goto=".main-slider"
 
