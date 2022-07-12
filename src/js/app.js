@@ -494,3 +494,23 @@ const slider_books = new Swiper('.books__slider', {
     },
   },
 });
+
+const slider_comment = new Swiper('.comment__slider', {
+  speed: 1500,
+  loop: true,
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 2,
+      grabCursor: true,
+      spaceBetween: 20,
+    },
+  },
+});
