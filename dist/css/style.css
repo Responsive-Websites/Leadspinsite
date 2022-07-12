@@ -1717,6 +1717,11 @@ main {
   letter-spacing: 0.44px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+  .footer__title {
+    text-align: center;
+  }
+}
 .footer__contacts {
   margin-top: 64px;
   font-size: 65px;
@@ -1735,6 +1740,11 @@ main {
   .footer__contacts {
     margin-top: 44px;
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer__contacts {
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1766,6 +1776,11 @@ main {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 650px) {
+  .footer__about {
+    display: block;
+  }
+}
 @media screen and (max-width: 480px) {
   .footer__about {
     margin-top: 44px;
@@ -1793,6 +1808,8 @@ main {
 @media screen and (max-width: 480px) {
   .footer__rights {
     margin-top: 54px;
+    display: block;
+    text-align: center;
   }
 }
 .footer__copyright {
@@ -1807,15 +1824,47 @@ main {
     margin-right: 46px;
   }
 }
+@media screen and (max-width: 480px) {
+  .footer__copyright {
+    display: block;
+    text-align: center;
+  }
+  .footer__copyright p:not(:last-child) {
+    margin-right: 0px;
+  }
+  .footer__copyright p {
+    margin-bottom: 10px;
+  }
+}
 .footer__address {
   flex: 0 1 50%;
   margin-right: 10px;
+  font-size: 20px;
+  line-height: 166%;
+}
+@media screen and (max-width: 650px) {
+  .footer__address {
+    margin-right: 0px;
+    font-size: 18px;
+    text-align: center;
+  }
 }
 .footer__social {
   flex: 0 1 50%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+@media screen and (max-width: 650px) {
+  .footer__social {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__social {
+    margin-top: 20px;
+  }
 }
 .footer__link {
   display: inline-block;
@@ -1828,12 +1877,32 @@ main {
     margin-right: 20px;
   }
 }
+@media screen and (max-width: 650px) {
+  .footer__link:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer__link {
+    margin: 0px 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__link {
+    margin: 0px 10px !important;
+  }
+}
 .footer__link img {
   width: 60px;
 }
 @media screen and (max-width: 768px) {
   .footer__link img {
     width: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__link img {
+    width: 40px;
   }
 }
 .footer__button-up {
@@ -1847,5 +1916,11 @@ main {
   .footer__button-up {
     padding: 35px 0px;
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__button-up {
+    padding: 15px 0px;
+    font-size: 30px;
   }
 }

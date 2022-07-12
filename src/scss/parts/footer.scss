@@ -37,6 +37,9 @@
 
     letter-spacing: 0.44px;
     text-transform: uppercase;
+    @media screen and (max-width: $md-2) {
+      text-align: center;
+    }
   }
 
   &__contacts {
@@ -55,6 +58,9 @@
     @media screen and (max-width: $md-3) {
       margin-top: 44px;
       font-size: 40px;
+    }
+    @media screen and (max-width: 650px) {
+      text-align: center;
     }
     @media screen and (max-width: $md-2) {
       margin-top: 30px;
@@ -82,6 +88,9 @@
       margin-top: 84px;
       font-size: 18px;
     }
+    @media screen and (max-width: 650px) {
+      display: block;
+    }
     @media screen and (max-width: $md-2) {
       margin-top: 44px;
       font-size: 16px;
@@ -104,6 +113,8 @@
     }
     @media screen and (max-width: $md-2) {
       margin-top: 54px;
+      display: block;
+      text-align: center;
     }
   }
   &__copyright {
@@ -116,6 +127,17 @@
         margin-right: 46px;
       }
     }
+    @media screen and (max-width: $md-2) {
+      display: block;
+      text-align: center;
+
+      & p:not(:last-child) {
+        margin-right: 0px;
+      }
+      & p {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   &__designer {
@@ -123,6 +145,13 @@
   &__address {
     flex: 0 1 50%;
     margin-right: 10px;
+    font-size: 20px;
+    line-height: 166%;
+    @media screen and (max-width: 650px) {
+      margin-right: 0px;
+      font-size: 18px;
+      text-align: center;
+    }
   }
 
   &__social {
@@ -130,6 +159,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media screen and (max-width: 650px) {
+      justify-content: center;
+      margin-top: 30px;
+    }
+    @media screen and (max-width: $md-2) {
+      margin-top: 20px;
+    }
   }
 
   &__link {
@@ -139,11 +176,23 @@
       @media screen and (max-width: $md-3) {
         margin-right: 20px;
       }
+      @media screen and (max-width: 650px) {
+        margin-right: 15px;
+      }
+    }
+    @media screen and (max-width: 650px) {
+      margin: 0px 15px;
+    }
+    @media screen and (max-width: $md-2) {
+      margin: 0px 10px !important;
     }
     & img {
       width: 60px;
       @media screen and (max-width: $md-3) {
         width: 50px;
+      }
+      @media screen and (max-width: $md-2) {
+        width: 40px;
       }
     }
   }
@@ -158,6 +207,11 @@
     @media screen and (max-width: $md-3) {
       padding: 35px 0px;
       font-size: 40px;
+    }
+
+    @media screen and (max-width: $md-2) {
+      padding: 15px 0px;
+      font-size: 30px;
     }
   }
 }
