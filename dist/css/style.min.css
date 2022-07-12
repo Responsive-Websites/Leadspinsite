@@ -397,6 +397,24 @@ main {
     margin-top: 30px;
   }
 }
+.main__books {
+  margin-top: 122px;
+}
+@media screen and (max-width: 1024px) {
+  .main__books {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__books {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main__books {
+    margin-top: 40px;
+  }
+}
 
 .full-screen {
   color: #ffffff;
@@ -1228,5 +1246,229 @@ main {
   .about__decor {
     font-size: 30px;
     margin-right: 20px;
+  }
+}
+
+.books__heading {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .books__heading {
+    display: block;
+  }
+}
+.books__heading-book {
+  flex: 0 1 294px;
+  margin-right: 74px;
+}
+@media screen and (min-width: 768px) {
+  .books__heading-book.swiper-slide {
+    flex-shrink: 1;
+    position: static;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .books__heading-book {
+    margin-right: 34px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .books__heading-book {
+    margin-right: 0px;
+    flex: 0 0 auto;
+  }
+}
+.books__content {
+  flex: 0 1 895px;
+}
+@media screen and (max-width: 768px) {
+  .books__content {
+    flex: 0 1 auto;
+  }
+}
+.books__title {
+  font-size: 114px;
+  line-height: 107%;
+  max-width: 521px;
+}
+@media screen and (max-width: 1024px) {
+  .books__title {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .books__title {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .books__title {
+    font-size: 35px;
+  }
+}
+.books__text {
+  margin-top: 38px;
+  font-size: 20px;
+  line-height: 131%;
+  max-width: 801px;
+}
+@media screen and (max-width: 1024px) {
+  .books__text {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .books__text {
+    font-size: 16px;
+    margin-top: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .books__text {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+}
+.books__slider {
+  margin-top: 30px;
+}
+@media screen and (max-width: 480px) {
+  .books__slider {
+    margin-top: 20px;
+  }
+}
+.books__about {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .books__about {
+    margin-top: 26px;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 768px) {
+  .books__about {
+    display: block;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .books__about {
+    margin-top: 30px;
+  }
+}
+.books__quote {
+  flex: 0 1 520px;
+  margin-right: 128px;
+  font-size: 20px;
+  line-height: 26px;
+}
+@media screen and (max-width: 1024px) {
+  .books__quote {
+    margin-right: 68px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .books__quote {
+    flex: 0 1 auto;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .books__quote {
+    font-size: 16px;
+  }
+}
+.books__about-books {
+  flex: 0 1 618px;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .books__about-books {
+    display: none;
+  }
+}
+.books__about-item {
+  flex: 0 1 294px;
+}
+.books__about-item:not(:last-child) {
+  margin-right: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .books__about-item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .books__about-item.swiper-slide {
+    flex-shrink: 1;
+    position: static;
+  }
+}
+@media screen and (max-width: 768px) {
+  .books__about-item {
+    flex: 0 0 auto;
+  }
+  .books__about-item:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+
+.book-item {
+  color: #000000;
+}
+.book-item__image {
+  padding-bottom: 100%;
+}
+.book-item__categories {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 6px;
+  margin-top: 16px;
+}
+@media screen and (max-width: 768px) {
+  .book-item__categories {
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+  }
+}
+.book-item__category {
+  font-size: 10px;
+  line-height: 131%;
+  opacity: 0.5;
+}
+.book-item__category:not(:last-child) {
+  margin-right: 11px;
+}
+@media screen and (max-width: 768px) {
+  .book-item__category {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .book-item__category {
+    font-size: 16px;
+  }
+}
+.book-item__label {
+  font-size: 12px;
+  line-height: 141%;
+  margin-top: 4px;
+}
+@media screen and (max-width: 768px) {
+  .book-item__label {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .book-item__label {
+    font-size: 14px;
   }
 }

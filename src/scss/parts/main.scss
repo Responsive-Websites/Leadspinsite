@@ -66,6 +66,19 @@
       margin-top: 30px;
     }
   }
+  &__books {
+    margin-top: 122px;
+
+    @media screen and (max-width: $md-4) {
+      margin-top: 100px;
+    }
+    @media screen and (max-width: $md-3) {
+      margin-top: 80px;
+    }
+    @media screen and (max-width: $md-2) {
+      margin-top: 40px;
+    }
+  }
 }
 .full-screen {
   color: $color-white;
@@ -848,6 +861,211 @@
     @media screen and (max-width: $md-2) {
       font-size: 30px;
       margin-right: 20px;
+    }
+  }
+}
+
+//books
+.books {
+  &__container {
+  }
+
+  &__inner {
+  }
+
+  &__heading {
+    display: flex;
+    @media screen and (max-width: $md-3) {
+      display: block;
+    }
+  }
+
+  &__heading-book {
+    flex: 0 1 294px;
+    margin-right: 74px;
+
+    &.swiper-slide {
+      @media screen and (min-width: $md-3) {
+        flex-shrink: 1;
+        position: static;
+      }
+    }
+    @media screen and (max-width: $md-4) {
+      margin-right: 34px;
+    }
+    @media screen and (max-width: $md-3) {
+      margin-right: 0px;
+      flex: 0 0 auto;
+    }
+  }
+
+  &__content {
+    flex: 0 1 895px;
+    @media screen and (max-width: $md-3) {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__title {
+    font-size: 114px;
+    line-height: 107%;
+    max-width: 521px;
+    @media screen and (max-width: $md-4) {
+      font-size: 80px;
+    }
+    @media screen and (max-width: $md-3) {
+      font-size: 60px;
+    }
+    @media screen and (max-width: $md-2) {
+      font-size: 35px;
+    }
+  }
+
+  &__text {
+    margin-top: 38px;
+    font-size: 20px;
+    line-height: 131%;
+    max-width: 801px;
+
+    @media screen and (max-width: $md-4) {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    @media screen and (max-width: $md-3) {
+      font-size: 16px;
+      margin-top: 18px;
+    }
+    @media screen and (max-width: $md-2) {
+      font-size: 14px;
+      margin-top: 14px;
+    }
+  }
+
+  &__slider {
+    margin-top: 30px;
+    @media screen and (max-width: $md-2) {
+      margin-top: 20px;
+    }
+  }
+
+  &__about {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+
+    @media screen and (max-width: $md-4) {
+      margin-top: 26px;
+      justify-content: space-between;
+    }
+    @media screen and (max-width: $md-3) {
+      display: block;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: $md-2) {
+      margin-top: 30px;
+    }
+  }
+
+  &__quote {
+    flex: 0 1 520px;
+    margin-right: 128px;
+    font-size: 20px;
+    line-height: 26px;
+    @media screen and (max-width: $md-4) {
+      margin-right: 68px;
+      font-size: 18px;
+    }
+    @media screen and (max-width: $md-3) {
+      flex: 0 1 auto;
+      text-align: center;
+      margin: 0px 0px 0px 0px;
+    }
+    @media screen and (max-width: $md-2) {
+      font-size: 16px;
+    }
+  }
+
+  &__about-books {
+    flex: 0 1 618px;
+    display: flex;
+
+    @media screen and (max-width: $md-3) {
+      display: none;
+    }
+  }
+
+  &__about-item {
+    flex: 0 1 294px;
+    &:not(:last-child) {
+      margin-right: 30px;
+      @media screen and (max-width: $md-4) {
+        margin-right: 20px;
+      }
+    }
+
+    &.swiper-slide {
+      @media screen and (min-width: $md-3) {
+        flex-shrink: 1;
+        position: static;
+      }
+    }
+
+    @media screen and (max-width: $md-3) {
+      flex: 0 0 auto;
+
+      &:not(:last-child) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+.book-item {
+  color: $color-black;
+  &__image {
+    padding-bottom: 100%;
+  }
+
+  &__categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    margin-top: 16px;
+
+    @media screen and (max-width: $md-3) {
+      padding-left: 0px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px;
+    }
+  }
+
+  &__category {
+    font-size: 10px;
+    line-height: 131%;
+    opacity: 0.5;
+
+    &:not(:last-child) {
+      margin-right: 11px;
+    }
+
+    @media screen and (max-width: $md-3) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: $md-2) {
+      font-size: 16px;
+    }
+  }
+
+  &__label {
+    font-size: 12px;
+    line-height: 141%;
+    margin-top: 4px;
+    @media screen and (max-width: $md-3) {
+      text-align: center;
+    }
+    @media screen and (max-width: $md-2) {
+      font-size: 14px;
     }
   }
 }
