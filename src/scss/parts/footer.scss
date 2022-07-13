@@ -195,6 +195,14 @@
         width: 40px;
       }
     }
+
+    transition: all 0.5s ease 0s;
+
+    @media screen and (min-width: $md-2) {
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
   }
 
   &__button-up {

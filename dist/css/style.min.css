@@ -200,6 +200,7 @@ main {
     width: 100%;
     background-color: #000000;
     z-index: -1;
+    cursor: auto;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 480px) {
@@ -1868,6 +1869,7 @@ main {
 }
 .footer__link {
   display: inline-block;
+  transition: all 0.5s ease 0s;
 }
 .footer__link:not(:last-child) {
   margin-right: 42px;
@@ -1903,6 +1905,11 @@ main {
 @media screen and (max-width: 480px) {
   .footer__link img {
     width: 40px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer__link:hover {
+    transform: scale(0.9);
   }
 }
 .footer__button-up {
